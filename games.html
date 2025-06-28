@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .games-section { max-width: 1200px; margin: 40px auto; }
+    .category { margin-bottom: 48px; }
+    .category h2 { margin-bottom: 24px; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .game-thumb-link { display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #0002; transition: transform 0.2s, box-shadow 0.2s; }
+    .game-thumb-link:hover { transform: scale(1.03); box-shadow: 0 8px 32px #0003; }
+    .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+    .game-title-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; font-size: 1.3em; font-weight: bold; padding: 16px 0; text-align: center; letter-spacing: 1px; }
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: 1fr; }
+      .game-title-overlay { font-size: 1em; padding: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Games</h1>
+  </header>
+  <main class="games-section">
+    <!-- Cognitive -->
+    <section class="category">
+      <h2>Cognitive</h2>
+      <div class="games-grid">
+        <a href="games/2048.html" class="game-thumb-link"><img src="img/2048.png" alt="2048" class="game-thumb-img"><span class="game-title-overlay">2048</span></a>
+        <a href="games/memory-match.html" class="game-thumb-link"><img src="img/memory-match.png" alt="Memory Match" class="game-thumb-img"><span class="game-title-overlay">Memory Match</span></a>
+        <a href="games/sudoku.html" class="game-thumb-link"><img src="img/sudoku.png" alt="Sudoku" class="game-thumb-img"><span class="game-title-overlay">Sudoku</span></a>
+        <a href="games/simon-says.html" class="game-thumb-link"><img src="img/simon-says.png" alt="Simon Says" class="game-thumb-img"><span class="game-title-overlay">Simon Says</span></a>
+        <a href="games/quick-math.html" class="game-thumb-link"><img src="img/quick-math.png" alt="Quick Math" class="game-thumb-img"><span class="game-title-overlay">Quick Math</span></a>
+      </div>
+    </section>
+    <!-- Strategy -->
+    <section class="category">
+      <h2>Strategy</h2>
+      <div class="games-grid">
+        <a href="games/chess.html" class="game-thumb-link"><img src="img/chess.png" alt="Chess" class="game-thumb-img"><span class="game-title-overlay">Chess</span></a>
+        <a href="games/checkers.html" class="game-thumb-link"><img src="img/checkers.png" alt="Checkers" class="game-thumb-img"><span class="game-title-overlay">Checkers</span></a>
+        <a href="https://edmond00.itch.io/timeline" target="_blank" rel="noopener" class="game-thumb-link">
+          <img src="img/timeline.png" alt="Timeline" class="game-thumb-img">
+          <span class="game-title-overlay">Timeline (Play on itch.io)</span>
+        </a>
+        <a href="games/connect-four.html" class="game-thumb-link"><img src="img/connect-four.png" alt="Connect Four" class="game-thumb-img"><span class="game-title-overlay">Connect Four</span></a>
+        <a href="games/tic-tac-toe.html" class="game-thumb-link"><img src="img/tic-tac-toe.png" alt="Tic Tac Toe" class="game-thumb-img"><span class="game-title-overlay">Tic Tac Toe</span></a>
+      </div>
+    </section>
+    <!-- Physical -->
+    <section class="category">
+      <h2>Physical</h2>
+      <div class="games-grid">
+        <a href="games/snake.html" class="game-thumb-link"><img src="img/snake.png" alt="Snake" class="game-thumb-img"><span class="game-title-overlay">Snake</span></a>
+        <a href="games/pong.html" class="game-thumb-link"><img src="img/pong.png" alt="Pong" class="game-thumb-img"><span class="game-title-overlay">Pong</span></a>
+        <a href="games/flappy-bird.html" class="game-thumb-link"><img src="img/flappy-bird.png" alt="Flappy Bird" class="game-thumb-img"><span class="game-title-overlay">Flappy Bird</span></a>
+        <a href="games/breakout.html" class="game-thumb-link"><img src="img/breakout.png" alt="Breakout" class="game-thumb-img"><span class="game-title-overlay">Breakout</span></a>
+        <a href="games/helix-jump.html" class="game-thumb-link"><img src="img/helix-jump.png" alt="Helix Jump" class="game-thumb-img"><span class="game-title-overlay">Helix Jump</span></a>
+      </div>
+    </section>
+    <!-- Creative -->
+    <section class="category">
+      <h2>Creative</h2>
+      <div class="games-grid">
+        <a href="games/pixel-art-maker.html" class="game-thumb-link"><img src="img/pixel-art-maker.png" alt="Pixel Art Maker" class="game-thumb-img"><span class="game-title-overlay">Pixel Art Maker</span></a>
+        <a href="games/music-maker.html" class="game-thumb-link"><img src="img/music-maker.png" alt="Music Maker" class="game-thumb-img"><span class="game-title-overlay">Music Maker</span></a>
+        <a href="games/scribble.html" class="game-thumb-link"><img src="img/scribble.png" alt="Scribble" class="game-thumb-img"><span class="game-title-overlay">Scribble</span></a>
+        <a href="games/coloring-book.html" class="game-thumb-link"><img src="img/coloring-book.png" alt="Coloring Book" class="game-thumb-img"><span class="game-title-overlay">Coloring Book</span></a>
+        <a href="games/story-creator.html" class="game-thumb-link"><img src="img/story-creator.png" alt="Story Creator" class="game-thumb-img"><span class="game-title-overlay">Story Creator</span></a>
+      </div>
+    </section>
+    <a href="games/minesweeper.html" class="game-thumb-link">
+      <img src="img/cannon-balls-3d.png" alt="Cannon Balls 3D" class="game-thumb-img">
+      <span class="game-title-overlay">Cannon Balls 3D</span>
+    </a>
+    <a href="index.html">&larr; Back to Home</a>
+  </main>
+</body>
+</html> 
