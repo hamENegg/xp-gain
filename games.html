@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .games-section { max-width: 1200px; margin: 40px auto; }
+    .category { margin-bottom: 48px; }
+    .category h2 { margin-bottom: 24px; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .game-thumb-link { display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #0002; transition: transform 0.2s, box-shadow 0.2s; }
+    .game-thumb-link:hover { transform: scale(1.03); box-shadow: 0 8px 32px #0003; }
+    .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+    .game-title-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; font-size: 1.3em; font-weight: bold; padding: 16px 0; text-align: center; letter-spacing: 1px; }
+    @media (max-width: 600px) {
+      .games-grid { grid-template-columns: 1fr; }
+      .game-title-overlay { font-size: 1em; padding: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Games</h1>
+  </header>
+  <main class="games-section">
+    <section class="category">
+      <h2>All Games</h2>
+      <div class="games-grid">
+        <a href="games/tetris-newest-OS.html" class="game-thumb-link">
+          <img src="img/tetris-newest-OS.png" alt="Tetris" class="game-thumb-img">
+          <span class="game-title-overlay">Tetris</span>
+        </a>
+      </div>
+    </section>
+    <a href="index.html">&larr; Back to Home</a>
+  </main>
+</body>
+</html> 
