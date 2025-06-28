@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Feedback</h1>
+  </header>
+  <main style="max-width:600px;margin:40px auto;">
+    <form id="feedbackForm">
+      <label for="name">Name (required, stored privately):</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="grade">Grade Level:</label><br>
+      <select id="grade" name="grade" required>
+        <option value="">Select grade</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+        <option value="9">Grade 9</option>
+        <option value="10">Grade 10</option>
+        <option value="11">Grade 11</option>
+        <option value="12">Grade 12</option>
+      </select><br><br>
+      <label for="feedback">Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="5" required></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p style="margin-top:20px;font-size:0.95em;color:#555;">Your name and feedback will be stored privately. <br>To enable private storage, connect this form to Firebase. <br>See <a href="#firebase-setup">instructions below</a>.</p>
+    <section id="firebase-setup" style="margin-top:40px;">
+      <h2>Firebase Setup (Owner Only)</h2>
+      <ol>
+        <li>Go to <a href="https://firebase.google.com/" target="_blank">Firebase Console</a> and create a new project.</li>
+        <li>Enable Firestore Database.</li>
+        <li>In Project Settings, add a new Web App and copy the config snippet.</li>
+        <li>Replace the placeholder in <code>js/feedback.js</code> with your config.</li>
+        <li>Deploy your site. Only you will have access to the database.</li>
+      </ol>
+    </section>
+    <a href="index.html">&larr; Back to Home</a>
+  </main>
+  <script src="js/feedback.js"></script>
+</body>
+</html> 
