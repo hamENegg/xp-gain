@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     .games-section { max-width: 1200px; margin: 40px auto; }
-    .category { margin-bottom: 48px; }
-    .category h2 { margin-bottom: 24px; }
-    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin-bottom: 40px; }
     .game-thumb-link { display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #0002; transition: transform 0.2s, box-shadow 0.2s; }
     .game-thumb-link:hover { transform: scale(1.03); box-shadow: 0 8px 32px #0003; }
     .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
@@ -25,52 +23,28 @@
     <h1>Games</h1>
   </header>
   <main class="games-section">
-    <!-- Strategy Category -->
-    <section class="category">
-      <h2>Strategy</h2>
-      <div class="games-grid">
-        <a href="games/tetris-newest-OS.html" class="game-thumb-link">
-          <img src="img/tetris-newest-OS.png" alt="Tetris" class="game-thumb-img">
-          <span class="game-title-overlay">Tetris</span>
-        </a>
-        <a href="games/Last Chess Standing v101/index.html" class="game-thumb-link">
-          <img src="img/last-chess-standing.png" alt="Last Chess Standing" class="game-thumb-img">
-          <span class="game-title-overlay">Last Chess Standing</span>
-        </a>
-        <a href="games/hex-game-main/index.html" class="game-thumb-link">
-          <img src="img/hex-game-main.png" alt="Hex Game" class="game-thumb-img">
-          <span class="game-title-overlay">Hex Game</span>
-        </a>
-      </div>
-    </section>
-    <!-- Cognitive Category -->
-    <section class="category">
-      <h2>Cognitive</h2>
-      <div class="games-grid">
-        <a href="games/dragonsweeper1.0.0/index.html" class="game-thumb-link">
-          <img src="img/dragonsweeper.png" alt="Dragonsweeper" class="game-thumb-img">
-          <span class="game-title-overlay">Dragonsweeper</span>
-        </a>
-        <a href="games/ssspicy-v1.1.2/index.html" class="game-thumb-link">
-          <img src="img/ssspicy.png" alt="SSSPICY!" class="game-thumb-img">
-          <span class="game-title-overlay">SSSPICY!</span>
-        </a>
-      </div>
-    </section>
-    <!-- Physical Category -->
-    <section class="category">
-      <h2>Physical</h2>
-      <div class="games-grid">
-        <!-- Add physical games here -->
-      </div>
-    </section>
-    <!-- Creative Category -->
-    <section class="category">
-      <h2>Creative</h2>
-      <div class="games-grid">
-        <!-- Add creative games here -->
-      </div>
-    </section>
+    <div class="games-grid">
+      <a href="games/tetris-newest-OS.html" class="game-thumb-link">
+        <img src="img/tetris-newest-OS.png" alt="Tetris" class="game-thumb-img">
+        <span class="game-title-overlay">Tetris</span>
+      </a>
+      <a href="games/Last Chess Standing v101/index.html" class="game-thumb-link">
+        <img src="img/last-chess-standing.png" alt="Last Chess Standing" class="game-thumb-img">
+        <span class="game-title-overlay">Last Chess Standing</span>
+      </a>
+      <a href="games/hex-game-main/index.html" class="game-thumb-link">
+        <img src="img/hex-game-main.png" alt="Hex Game" class="game-thumb-img">
+        <span class="game-title-overlay">Hex Game</span>
+      </a>
+      <a href="games/dragonsweeper1.0.0/index.html" class="game-thumb-link">
+        <img src="img/dragonsweeper.png" alt="Dragonsweeper" class="game-thumb-img">
+        <span class="game-title-overlay">Dragonsweeper</span>
+      </a>
+      <a href="games/ssspicy-v1.1.2/index.html" class="game-thumb-link">
+        <img src="img/ssspicy.png" alt="SSSPICY!" class="game-thumb-img">
+        <span class="game-title-overlay">SSSPICY!</span>
+      </a>
+    </div>
     <a href="index.html">&larr; Back to Home</a>
   </main>
 </body>
