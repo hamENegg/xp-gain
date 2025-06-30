@@ -3,25 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retro Game Zone</title>
+  <title>Ready to gain XP?</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    .xp-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Indie Flower', cursive;
+      margin-top: 0;
+    }
+    .xp-title {
+      font-size: 3em;
+      font-family: 'Indie Flower', cursive;
+      text-align: center;
+      margin-bottom: 0.1em;
+      margin-top: 0;
+    }
+    .xp-gain {
+      font-size: 1.3em;
+      font-family: 'Indie Flower', cursive;
+      text-align: center;
+      margin-bottom: 0.2em;
+      margin-top: -0.7em;
+    }
+    .xp-xp {
+      font-size: 4em;
+      font-family: 'Indie Flower', cursive;
+      text-align: center;
+      margin: 0.2em 0 0.5em 0;
+      letter-spacing: 0.1em;
+    }
+    .xp-buttons {
+      display: flex;
+      gap: 2em;
+      margin-top: 1.5em;
+    }
+    .xp-btn {
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.5em;
+      padding: 0.4em 1.5em;
+      border: 2.5px solid #222;
+      border-radius: 16px;
+      background: #fff;
+      cursor: pointer;
+      margin: 0 0.2em;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 2px 2px 0 #222;
+      outline: none;
+    }
+    .xp-btn:hover {
+      background: #f0f0f0;
+      box-shadow: 4px 4px 0 #222;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>RETRO GAME ZONE</h1>
-    <div class="header-icons">
-      <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5e/Grass_Block_JE3_BE3.png" alt="Minecraft" title="Minecraft">
-      <img src="https://static.wikia.nocookie.net/roblox/images/6/6b/Roblox_Logo_2017.png" alt="Roblox" title="Roblox" style="background:#fff; border-radius:8px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/8bit_joystick.png" alt="Joystick" title="Retro Joystick">
+  <div class="xp-container">
+    <div class="xp-title">Ready to</div>
+    <div class="xp-gain">gain</div>
+    <div class="xp-xp">XP?</div>
+    <div class="xp-buttons">
+      <button class="xp-btn" onclick="location.href='about.html'">About</button>
+      <button class="xp-btn" onclick="location.href='games.html'">Games</button>
+      <button class="xp-btn" onclick="location.href='feedback.html'">Feedback</button>
     </div>
-  </header>
-  <nav class="main-nav">
-    <button onclick="location.href='about.html'">About</button>
-    <button onclick="location.href='games.html'">Games</button>
-    <button onclick="location.href='feedback.html'">Feedback</button>
-  </nav>
-  <footer>
-    &#x2665; &#x2665;
-  </footer>
+  </div>
 </body>
 </html>
