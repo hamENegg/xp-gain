@@ -10,7 +10,7 @@
     .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin-bottom: 40px; }
     .game-thumb-link { display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px #0002; transition: transform 0.2s, box-shadow 0.2s; }
     .game-thumb-link:hover { transform: scale(1.03); box-shadow: 0 8px 32px #0003; }
-    .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+    .game-thumb-img { width: 100%; aspect-ratio: 16/9; object-fit: contain; display: block; background: #eee; }
     .game-title-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.55); color: #fff; font-size: 1.3em; font-weight: bold; padding: 16px 0; text-align: center; letter-spacing: 1px; }
     @media (max-width: 600px) {
       .games-grid { grid-template-columns: 1fr; }
