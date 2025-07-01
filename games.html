@@ -16,6 +16,38 @@
       .games-grid { grid-template-columns: 1fr; }
       .game-title-overlay { font-size: 1em; padding: 10px 0; }
     }
+    .game-ref-img {
+      background: none !important;
+      background-color: transparent !important;
+      pointer-events: none;
+      user-select: none;
+    }
+    .back-btn {
+      position: absolute;
+      top: 13px;
+      left: 32px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.1em;
+      padding: 0.4em 1.5em;
+      border: 4px solid #00ffea;
+      border-radius: 16px;
+      background: #222;
+      color: #00ffea;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s, color 0.2s, border-color 0.2s;
+      box-shadow: 0 4px 16px #000a, 0 0 0 2px #00ffea;
+      outline: none;
+      text-shadow: 0 2px 8px #000a;
+      display: inline-block;
+      z-index: 10;
+    }
+    .back-btn:hover {
+      background: #00ffea;
+      color: #222;
+      border-color: #fff;
+      box-shadow: 0 8px 32px #00ffea, 0 0 0 4px #fff;
+    }
   </style>
 </head>
 <body>
