@@ -53,24 +53,26 @@
     <h1>FEEDBACK</h1>
   </header>
   <main style="max-width:600px;margin:40px auto;">
-    <form id="feedbackForm">
-      <label for="name">Name (required, stored privately):</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScKei1crH77-mDx8Oq4b7lspEQdh9xpBP2MXTmIwvACF5MzYA/formResponse" method="POST" target="_blank">
+      <label for="name">Name (required):</label><br>
+      <input type="text" id="name" name="entry.123456789" required><br><br>
+
       <label for="grade">Grade Level:</label><br>
-      <select id="grade" name="grade" required>
+      <select id="grade" name="entry.987654321" required>
         <option value="">Select grade</option>
-        <option value="7">Grade 7</option>
-        <option value="8">Grade 8</option>
-        <option value="9">Grade 9</option>
-        <option value="10">Grade 10</option>
-        <option value="11">Grade 11</option>
-        <option value="12">Grade 12</option>
+        <option value="Grade 7">Grade 7</option>
+        <option value="Grade 8">Grade 8</option>
+        <option value="Grade 9">Grade 9</option>
+        <option value="Grade 10">Grade 10</option>
+        <option value="Grade 11">Grade 11</option>
+        <option value="Grade 12">Grade 12</option>
       </select><br><br>
+
       <label for="feedback">Feedback:</label><br>
-      <textarea id="feedback" name="feedback" rows="5" required></textarea><br><br>
+      <textarea id="feedback" name="entry.1122334455" rows="5" required></textarea><br><br>
+
       <button type="submit">Submit</button>
     </form>
   </main>
-  <script src="js/feedback.js"></script>
 </body>
 </html>
